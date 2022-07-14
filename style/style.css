@@ -18,3 +18,35 @@ p {
 img {
     width: 500px;
 }
+
+@media screen and (max-width: 1024px) {
+    .container {
+     
+        flex-direction: column;
+    }
+    .img
+    {
+        animation: fly 2s;
+        width: 200px;
+    }
+    .content-container{
+        font-size: 20px;
+        color: brown;
+    }
+    @keyframes fly {
+        60%
+            {
+                transform: rotate(-560deg);
+            }
+           50%
+            {
+            transform: translateY(-100px);
+            }
+            40%
+            {
+                transform: scaleY(50%);
+            }
+        }
+    
+    
+}
