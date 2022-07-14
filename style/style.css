@@ -77,3 +77,32 @@ img {
             
         }
 }
+
+@media screen and (max-width: 479px) {
+    .container {
+     
+        flex-direction: column;
+    }
+    .img
+    {
+        width: 100px;
+
+        animation: fly 2s;
+    }
+    .content-container{
+        font-size: 20px;
+        color: black;
+        
+    }
+    @keyframes fly {
+    60%
+        {
+            transform: rotate(360deg);
+        }
+       50%
+        {
+        transform: translateX(30px);
+        }
+        
+    }
+}
