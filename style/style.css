@@ -50,3 +50,30 @@ img {
     
     
 }
+@media screen and (max-width: 767px) {
+    .container {
+     
+        flex-direction:column-reverse;
+    }
+    .img
+    {
+        width: 300px;
+        
+        animation: fly 2s;
+    }
+    .content-container{
+        font-size: 30px;
+        color: rgb(165, 42, 144);
+    }
+    @keyframes fly {
+        60%
+            {
+                transform: rotate(-360deg);
+            }
+           50%
+            {
+            transform: translateX(-30px);
+            }
+            
+        }
+}
